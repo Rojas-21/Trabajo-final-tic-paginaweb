@@ -1,0 +1,27 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+
+background: linear-gradient(0deg, #efefef,#052247,#0984ff);
+  color: #fff;
+  text-align: center;
+}
+
+.juego-presentacion {
+  padding: 80px 20px;
+}
+
+.juego-presentacion h1 {
+  font-size: 80px;
+  color: #ffffff;
+  text-shadow: 0 0 20px #fff, 0 0 40px #ccc;
+  margin-bottom: 40px;
+}
+
+.juego-presentacion img {
+  width: 100%;
+  max-width: 800px;
+  border-radius: 20px;
+  box-shadow: 0 0 30px rgba(255,255,255,0.3);
+}

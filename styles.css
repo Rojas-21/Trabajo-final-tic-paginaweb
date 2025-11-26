@@ -1,0 +1,273 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #0f0f0f;
+  color: #f0f0f0;
+  scroll-behavior: smooth;
+}
+
+/* Cabecera */
+.cabecera {
+  width: 100%;
+  height: 300px;
+  background-image: url("img/fondoprincipal.jpg"); /* tu fondo personalizado */
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  text-align: center;
+}
+
+.logo {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.logo img {
+  width: 100px;
+  height: 100px;
+
+  cursor: pointer;
+}
+
+.texto-cabecera {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.texto-cabecera h1 {
+  font-size: 160px;
+  color: #00ffcc;
+  text-shadow: 0 0 10px #00ffcc, 0 0 20px #009999;
+}
+
+.texto-cabecera h2 {
+  font-size: 24px;
+  color: #ffffff;
+  margin-top: 10px;
+}
+
+/* Menú */
+.barra {
+  background-color: #0f898538;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.barra > ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 200px;
+}
+
+.barra a {
+  color: #ffffff;
+  font-size: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 12px;
+  white-space: nowrap;
+ letter-spacing: normal;
+  text-shadow: 0 0 10px #ffffff, 0 0 20px #1e4949;
+}
+
+.barra a:hover {
+  background-color: #f5f3f34c;
+  border-radius: 5px;
+}
+
+/* Menú desplegable */
+.dropdown {
+  position: relative;
+}
+
+.submenu {
+  display: none !important;
+  position: absolute;
+  top: 35px;
+  left: 70px;
+  background-color: #222;
+  padding: 30px;
+  border-radius: 20px;
+  flex-direction: column;
+  z-index: 1000;
+  gap: 0px;
+  align-items: flex-start;
+}
+
+.submenu.show {
+  display: flex !important;
+}
+
+.submenu li {
+  margin: 10px 0;
+}
+
+/* Principal */
+.principal {
+  padding: 40px 20px;
+  text-align: center;
+  font-size: 18px;
+}
+
+.juegos-destacados {
+  padding: 60px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  align-items: center;
+ background: -webkit-linear-gradient(200deg, #2929293c,#0d1f3f,#111635);
+background: linear-gradient(180deg, #36363667,#0d1f3ffc,#111635);
+
+ 
+}
+
+.juego {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.8s ease;
+  max-width: 800px;
+}
+
+.juego img {
+  width:100%;
+  max-width: 300px;
+  border-radius: 30px;
+  box-shadow: 0 0 20px rgba(0,255,204,0.3);
+}
+
+.juego .info {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.juego h1 {
+  font-size: 28px;
+  color: #eec008;
+  text-shadow: 0 0 10px #deaf22, 0 0 20px #927610;
+}
+.juego h2 {
+  font-size: 28px;
+  color: #49ab19;
+  text-shadow: 0 0 10px #085205, 0 0 20px #07531b;
+}
+
+.juego h3{
+  font-size: 28px;
+  color: #0084ff;
+  text-shadow: 0 0 10px #1c3e9c85, 0 0 20px #3f88f7;
+}
+
+.juego p {
+  font-size: 18px;
+  color: #ccc;
+}
+
+/* Clase que se activa al hacer scroll */
+.juego.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.redes-submenu {
+  display: none;
+  position: absolute;
+  background-color: #222;
+  padding: 20px;
+  border-radius: 10px;
+  list-style: none;
+  z-index: 1000;
+  top: 35px;
+  left: 0;
+}
+
+.redes-submenu.show {
+  display: block;
+}
+
+.redes-submenu li {
+  margin: 10px 0;
+}
+.social-panel {
+  margin-top: 0;
+  padding: 60px 0;
+background: -webkit-linear-gradient(90deg, #ff6000,#301000,#100000);
+background: linear-gradient(0deg, #ff6b02,#301000,#100000);
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  display: none;
+  text-align: center;
+  border-top: 4px solid #000000;
+  box-shadow: 0 0 20px rgba(175, 169, 169, 0.3);
+  z-index: 10;
+
+
+}
+
+
+
+.social-panel.visible {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.social-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background-color: rgba(0, 0, 0, 0.1); /* fondo suave para cada ítem */
+  padding: 16px 24px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.social-item img.icono {
+  width: 36px;
+  height: 36px;
+  filter: drop-shadow(0 0 4px rgba(0,0,0,0.4));
+}
+
+.social-item a,
+.social-item span {
+  color: #000;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.social-item a:hover {
+  color: #333;
+}
+
+.social-item.discord {
+  background-color: #2651a5;
+}
+
+.social-item.gmail {
+  background-color: #ffffff5b;
+}
+
+.social-item.instagram {
+  background-color: #4c147a7c;
+}
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}

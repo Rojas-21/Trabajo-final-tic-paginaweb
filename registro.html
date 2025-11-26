@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Registro - JR XPlay</title>
+  <link rel="stylesheet" href="registro.css">
+</head>
+<body>
+  <header class="cabecera">
+    <div class="logo">
+      <a href="index.html">
+        <img src="img/logojr.png" alt="Logo JR XPlay">
+      </a>
+    </div>
+    <div class="texto-cabecera">
+     
+  
+    </div>
+  </header>
+
+  <main class="formulario">
+    <h2>Inscribite para participar</h2>
+    <form action="#" method="post">
+      <!-- Selección de juego -->
+      <label for="juego">Seleccioná el juego:</label>
+      <select id="juego" name="juego" required>
+        <option value="">-- Elegí tu juego --</option>
+        <option value="clashroyale">Clash Royale</option>
+        <option value="counterstrike">Counter Strike</option>
+        <option value="minecraft">Minecraft</option>
+        <option value="rocketleague">Rocket League</option>
+      </select>
+
+      <!-- Datos personales -->
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" required>
+
+      <label for="apellido">Apellido:</label>
+      <input type="text" id="apellido" name="apellido" required>
+
+      <label for="correo">Correo electrónico:</label>
+      <input type="email" id="correo" name="correo" required>
+
+      <!-- ID o nombre en el juego -->
+      <label for="idjuego">Tu ID o nombre en el juego:</label>
+      <input type="text" id="idjuego" name="idjuego" required>
+
+      <!-- Plataforma -->
+      <label for="plataforma">¿Jugás en PC o móvil?</label>
+      <select id="plataforma" name="plataforma" required>
+        <option value="">-- Seleccioná tu plataforma --</option>
+        <option value="pc">PC</option>
+        <option value="movil">Móvil</option>
+      </select>
+
+      <!-- Botón de envío -->
+      <button type="submit" id="boton">¡Enviar!</button>
+      <!-- Mensaje de confirmación -->
+<p id="mensaje" class="oculto">¡Registrado correctamente!</p>
+
+<!-- Contador de inscripciones -->
+<div class="contador">
+  <p>Jugadores inscritos: <span id="contador">0</span></p>
+</div>
+
+    </form>
+  </main>
+  <script src="registro.js"></script>
+</body>
+
+</html>
