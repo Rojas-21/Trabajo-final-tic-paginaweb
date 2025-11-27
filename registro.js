@@ -11,14 +11,14 @@ document.addEventListener("DOMContentLoaded", () => {
   formulario.addEventListener("submit", (e) => {
     e.preventDefault(); // evita recargar la página
 
-    // Capturar valores
+
     const nombre = document.getElementById("nombre").value.trim();
     const apellido = document.getElementById("apellido").value.trim();
     const correo = document.getElementById("correo").value.trim();
     const idJuego = document.getElementById("idjuego").value.trim();
     const plataforma = document.getElementById("plataforma").value;
 
-    // Validaciones
+
     if (nombre === "" || apellido === "") {
       mensaje.textContent = "Nombre y apellido son obligatorios.";
       mensaje.style.color = "red";
@@ -48,7 +48,6 @@ document.addEventListener("DOMContentLoaded", () => {
       return;
     }
 
-    // Si todo está bien → contador + mensaje
     totalInscritos++;
     localStorage.setItem("totalInscritos", totalInscritos);
 

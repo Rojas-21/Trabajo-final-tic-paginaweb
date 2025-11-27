@@ -10,8 +10,8 @@ body {
 }
 
 .juego-presentacion {
-    padding: 80px 20px 40px; /* Reducimos el padding inferior */
-    text-align: center; /* Centramos solo la presentación */
+    padding: 80px 20px 40px; 
+    text-align: center; 
 }
 
 .juego-presentacion h1 {
@@ -30,7 +30,7 @@ body {
 
 
 
-/* NavBar */
+
 .navbar {
     background-color: #ffffff52;
     padding: 15px 20px;
@@ -40,7 +40,7 @@ body {
 }
 
 .navbar a, #menu-toggle {
-    color: #ffd700; /* Dorado para enlaces */
+    color: #ffd700; 
     text-decoration: none;
     font-weight: bold;
     padding: 8px 15px;
@@ -56,44 +56,42 @@ body {
     background-color: rgba(255, 255, 255, 0.1);
 }
 
-/* Contenido Principal */
+
 .main-content {
-    max-width: 1200px; /* Aumenta el ancho máximo del contenedor */
+    max-width: 1200px; 
     margin: 40px auto;
     padding: 20px;
     display: flex; 
     gap: 30px;
-    /* Para que los elementos no se salgan de la caja */
+
     flex-wrap: wrap; 
-    /* Alineación vertical */
+  
     align-items: stretch;
 }
 
 article, section {
-    /* Aquí está el problema: antes tenías flex-grow: 3 */
-    /* Lo cambiamos para que ocupe casi la mitad (50%) menos el margen */
-    flex-basis: calc(50% - 15px); /* Ocupa la mitad del espacio menos la mitad del gap */
-    flex-grow: 1; /* Permite que crezca un poco */
+
+    flex-basis: calc(50% - 15px); 
+    flex-grow: 1; 
     
-    background-color: rgba(0, 0, 0, 0.7); /* Hacemos el fondo más opaco */
+    background-color: rgba(0, 0, 0, 0.7); 
     padding: 30px;
     border-radius: 15px;
 }
 
 .datos-rapidos {
-    /* Este es el aside, queremos que ocupe menos (un tercio) */
-    flex-basis: 300px; /* Establece un ancho fijo/mínimo */
-    flex-grow: 1; /* Permite que crezca si hay espacio */
-    
+
+    flex-basis: 300px;
+    flex-grow: 1; 
     background-color: #ff6000;
     padding: 30px;
     border-radius: 15px;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
-    /* **Ajuste Importante:** Asegura que el texto no esté centrado por defecto */
+
     text-align: left; 
 }
 
-/* Footer */
+
 footer {
     background-color: #100000;
     padding: 20px;
@@ -101,10 +99,10 @@ footer {
     border-top: 1px solid #ff740a;
 }
 
-/* --- Estilos para la Funcionalidad Dinámica (Sidebar) --- */
+
 .sidebar {
     height: 100%;
-    width: 0; /* **Oculto por defecto** (controlado por JS) */
+    width: 0; 
     position: fixed;
     z-index: 1;
     top: 0;
@@ -129,7 +127,7 @@ footer {
 .sidebar a:hover {
     color: #00ffea;
 }
-/* Clase que se añade/quita con JS */
+
 .sidebar.active {
     width: 250px;
 }

@@ -1,13 +1,13 @@
-/* --- Estilos Base --- */
+
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Roboto', sans-serif; /* Usamos una fuente más "limpia" */
+    font-family: 'Roboto', sans-serif; 
     
-    /* Degradado para CS2: oscuro, gris metálico y toques de naranja/amarillo */
+
     background: linear-gradient(180deg, #ffffff4c 0%, #551f02 50%, #e56911 100%);
-    color: #e0dfdd; /* Color de texto gris claro */
-    min-height: 100vh; /* Asegura que el fondo cubra toda la altura */
+    color: #e0dfdd; 
+    min-height: 100vh; 
 }
 
 .juego-presentacion {
@@ -17,7 +17,7 @@ body {
 
 .juego-presentacion h1 {
     font-size: 80px;
-    color: #000000; /* Naranja/Dorado CS */
+    color: #000000;
     text-shadow: 0 0 10px #303030, 0 0 20px rgba(22, 22, 22, 0.5);
     margin-bottom: 20px;
 }
@@ -25,9 +25,9 @@ body {
 .juego-presentacion img {
     width: 100%;
     max-width: 800px;
-    border-radius: 5px; /* Bordes más cuadrados, menos suaves */
+    border-radius: 5px; 
     box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
-    border: 3px solid #713901; /* Borde sutil */
+    border: 3px solid #713901; 
 }
 
 .tagline {
@@ -37,7 +37,6 @@ body {
     margin-top: 20px;
 }
 
-/* --- Estilos para la Navegación y Estructura --- */
 
 .navbar {
     background-color: #0d0d0d;
@@ -45,7 +44,7 @@ body {
     display: flex;
     justify-content: center;
     gap: 30px;
-    border-bottom: 2px solid #ff9d0b; /* Línea de contraste */
+    border-bottom: 2px solid #ff9d0b; 
 }
 
 .navbar a, #js-feature-toggle {
@@ -56,7 +55,7 @@ body {
     border-radius: 3px;
     transition: background-color 0.3s, color 0.3s;
     background: none;
-    border: 1px solid #444; /* Borde para el botón */
+    border: 1px solid #444; 
     cursor: pointer;
     font-size: 16px;
 }
@@ -66,7 +65,7 @@ body {
     color: #0a0a0a;
 }
 
-/* --- Contenido Principal (Layout Flexbox) --- */
+
 
 .main-content {
     max-width: 1200px;
@@ -76,29 +75,29 @@ body {
     gap: 30px;
     flex-wrap: wrap; 
     align-items: stretch;
-    text-align: left; /* Alineamos el texto a la izquierda en las cajas */
+    text-align: left; 
 }
 
 article, section {
-    flex-basis: calc(60% - 15px); /* Un poco más de la mitad para el contenido principal */
+    flex-basis: calc(60% - 15px); 
     flex-grow: 1; 
-    background-color: rgba(255, 255, 255, 0.05); /* Fondo oscuro transparente */
+    background-color: rgba(255, 255, 255, 0.05); 
     padding: 30px;
     border-radius: 5px;
-    border-left: 5px solid #ff9d0b; /* Detalle de color CS */
+    border-left: 5px solid #ff9d0b; 
 }
 
-/* Estilo para las listas de novedades */
+
 .novedades-list {
-    list-style-type: '⚡ '; /* Bullet points temáticos */
+    list-style-type: '⚡ '; 
     padding-left: 20px;
 }
 
-/* --- Aside y Funcionalidad JS --- */
+
 .js-section {
-    flex-basis: 300px; /* Ancho más angosto para el contador */
+    flex-basis: 300px; 
     flex-grow: 1; 
-    background-color: #333; /* Fondo más oscuro */
+    background-color: #333; 
     padding: 30px;
     border-radius: 5px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
@@ -117,7 +116,7 @@ article, section {
     letter-spacing: 2px;
 }
 
-/* Footer */
+
 footer {
     background-color: #0d0d0d;
     padding: 20px;

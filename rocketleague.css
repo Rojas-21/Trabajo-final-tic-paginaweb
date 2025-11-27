@@ -1,10 +1,10 @@
-/* --- Estilos Base para Rocket League --- */
+
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Montserrat', sans-serif; /* Fuente moderna */
+    font-family: 'Montserrat', sans-serif; 
     
-    /* Degradado de Azul Oscuro a Azul Eléctrico y Blanco */
+
     background: linear-gradient(180deg, #052247 0%, #0984ff 50%, #efefef 100%);
     color: #fff;
     min-height: 100vh;
@@ -21,7 +21,7 @@ h1, h2, h3 {
 
 .juego-presentacion h1 {
     font-size: 80px;
-    color: #ffd700; /* Dorado/Amarillo de energía */
+    color: #ffd700; 
     text-shadow: 0 0 10px #ffd700, 0 0 30px rgba(255,215,0,0.5);
     margin-bottom: 20px;
 }
@@ -42,10 +42,9 @@ h1, h2, h3 {
     margin-top: 30px;
 }
 
-/* --- Estilos para la Navegación y Estructura --- */
 
 .navbar {
-    background-color: #052247; /* Azul Oscuro (cabina) */
+    background-color: #052247; 
     padding: 15px 20px;
     display: flex;
     justify-content: center;
@@ -58,7 +57,7 @@ h1, h2, h3 {
     text-decoration: none;
     font-weight: bold;
     padding: 8px 15px;
-    border-radius: 20px; /* Bordes suaves/circulares */
+    border-radius: 20px; 
     background: #0984ff;
     border: none;
     cursor: pointer;
@@ -69,10 +68,8 @@ h1, h2, h3 {
 .navbar a:hover, #rank-info-toggle:hover {
     background-color: #ffd700;
     color: #052247;
-    transform: scale(1.05); /* Efecto de "propulsión" */
+    transform: scale(1.05); 
 }
-
-/* --- Contenido Principal (Flexbox) --- */
 
 .main-content {
     max-width: 1200px;
@@ -88,7 +85,7 @@ h1, h2, h3 {
 article, section {
     flex-basis: calc(60% - 15px);
     flex-grow: 1; 
-    background-color: rgba(0, 0, 0, 0.6); /* Oscuro transparente */
+    background-color: rgba(0, 0, 0, 0.6); 
     padding: 30px;
     border-radius: 10px;
     border-left: 5px solid #0984ff;
@@ -99,7 +96,7 @@ article, section {
     padding-left: 20px;
 }
 
-/* --- Aside y Funcionalidad JS --- */
+
 .js-section {
     flex-basis: 300px;
     flex-grow: 1; 
@@ -123,7 +120,6 @@ article, section {
     text-align: center;
 }
 
-/* Footer */
 footer {
     background-color: #052247;
     padding: 20px;

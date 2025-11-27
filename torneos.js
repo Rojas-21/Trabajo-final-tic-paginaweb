@@ -55,11 +55,11 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // --- Lógica de Animación de Scroll para hacer visibles los torneos ---
+
     const torneos = document.querySelectorAll('.torneo-card');
 
     function checkScroll() {
-        // La animación se dispara cuando el elemento está un 15% arriba del final de la ventana
+     
         const triggerBottom = window.innerHeight * 0.85; 
 
         torneos.forEach(torneo => {
@@ -72,7 +72,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     window.addEventListener('scroll', checkScroll);
     
-    // **CORRECCIÓN:** Ejecutamos la función al cargar para mostrar los primeros elementos.
+    
     checkScroll(); 
 });
   const contactoLinks = document.querySelectorAll(".redes-submenu a");

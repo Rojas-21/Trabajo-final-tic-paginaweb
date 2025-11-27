@@ -1,17 +1,17 @@
-/* --- Estilos Base para Minecraft --- */
+
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Press Start 2P', monospace, sans-serif; /* Usamos una fuente pixelada si está disponible, o fallback */
+    font-family: 'Press Start 2P', monospace, sans-serif; 
     
-    /* Degradado de Tierra y Pasto */
+
     background: linear-gradient(180deg, #04da24 0%, #001d05 40%, #5d4037 100%);
     color: #fff;
     min-height: 100vh;
 }
 
 h1, h2, h3 {
-    /* Estilo para simular texto pixelado */
+
     text-shadow: 2px 2px #000; 
 }
 
@@ -21,8 +21,8 @@ h1, h2, h3 {
 }
 
 .juego-presentacion h1 {
-    font-size: 60px; /* Tamaño ligeramente reducido para fuentes pixeladas */
-    color: #a8a8a8; /* Gris piedra */
+    font-size: 60px; 
+    color: #a8a8a8; 
     text-shadow: 4px 4px #000;
     margin-bottom: 20px;
     font-weight: normal;
@@ -31,11 +31,11 @@ h1, h2, h3 {
 .juego-presentacion img {
     width: 100%;
     max-width: 700px;
-    /* Usamos bordes cuadrados */
+ 
     border-radius: 0; 
-    box-shadow: 5px 5px 0 0 #3e2723, 10px 10px 0 0 #000; /* Sombra de bloque */
+    box-shadow: 5px 5px 0 0 #3e2723, 10px 10px 0 0 #000; 
     border: 5px solid #000;
-    image-rendering: pixelated; /* Si la imagen es un pixel art, esto ayuda */
+    image-rendering: pixelated; 
 }
 
 .tagline {
@@ -44,15 +44,15 @@ h1, h2, h3 {
     margin-top: 30px;
 }
 
-/* --- Estilos para la Navegación y Estructura --- */
+
 
 .navbar {
-    background-color: #3e2723; /* Marrón tierra */
+    background-color: #3e2723; 
     padding: 15px 20px;
     display: flex;
     justify-content: center;
     gap: 30px;
-    border-bottom: 5px solid #04da24; /* Verde pasto */
+    border-bottom: 5px solid #04da24; 
 }
 
 .navbar a, #show-crafting-modal {
@@ -60,7 +60,7 @@ h1, h2, h3 {
     text-decoration: none;
     font-weight: bold;
     padding: 8px 15px;
-    border-radius: 0; /* Bloques */
+    border-radius: 0; 
     background: #000;
     border: 3px solid #04da24;
     cursor: pointer;
@@ -73,7 +73,7 @@ h1, h2, h3 {
     color: #000;
 }
 
-/* --- Contenido Principal (Flexbox) --- */
+
 
 .main-content {
     max-width: 1100px;
@@ -108,11 +108,10 @@ article, section {
 }
 
 .game-modes-list {
-    list-style-type: '◼ '; /* Bullet points de bloque */
+    list-style-type: '◼ '; 
     padding-left: 20px;
 }
 
-/* Footer */
 footer {
     background-color: #3e2723;
     color: #a8a8a8;
@@ -121,10 +120,10 @@ footer {
     border-top: 5px solid #04da24;
 }
 
-/* --- Estilos para la Funcionalidad Dinámica (Modal) --- */
+
 
 .modal {
-    /* Por defecto, está oculto */
+ 
     display: none; 
     position: fixed;
     z-index: 10; 
@@ -133,7 +132,7 @@ footer {
     width: 100%;
     height: 100%;
     overflow: auto;
-    background-color: rgba(0,0,0,0.8); /* Fondo oscuro */
+    background-color: rgba(0,0,0,0.8); 
 }
 
 .modal.visible {
@@ -141,7 +140,7 @@ footer {
 }
 
 .modal-content {
-    background-color: #a8a8a8; /* Gris piedra */
+    background-color: #a8a8a8; 
     color: #000;
     margin: 10% auto;
     padding: 20px;

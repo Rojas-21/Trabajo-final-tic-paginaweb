@@ -6,7 +6,7 @@
 
 html, body {
     width: 100%;
-    /* La altura debe ser min-height para que el contenido determine la altura total */
+ 
     min-height: 100vh; 
     font-family: 'Segoe UI', sans-serif;
     background-color: #0f0f0f;
@@ -38,7 +38,7 @@ html, body {
 }
 
 .texto-cabecera {
-    /* Alineación central para el h1 */
+
     position: absolute;
     top: 50%;
     left: 50%;
@@ -62,7 +62,7 @@ html, body {
     list-style: none;
     display: flex;
     justify-content: center;
-    /* Ajusta el gap para que sea más razonable en pantallas normales */
+   
     gap: 80px; 
 }
 
@@ -75,7 +75,7 @@ html, body {
     white-space: nowrap;
     letter-spacing: normal;
     text-shadow: 0 0 10px #ffffff, 0 0 20px #1e4949;
-    /* Evita que los enlaces del dropdown tengan fondo en hover */
+   
     background: none; 
 }
 
@@ -118,7 +118,7 @@ html, body {
 }
 
 .bienvenida h1 {
-    /* Reduce el tamaño del título de la sección TORNEOS para que no sea GIGANTE */
+   
     font-size: 100px; 
     color: #ffcc00;
     text-shadow: 0 0 10px #aa6c01, 0 0 20px #994f00;
@@ -136,7 +136,7 @@ html, body {
 }
 
 .torneo-card {
-    /* **Este es el estilo que hace visible el contenido** */
+
     display: flex;
     flex-direction: row; 
     gap: 30px;
@@ -145,7 +145,7 @@ html, body {
     border-radius: 15px;
     max-width: 900px; 
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
-    /* Animación: Oculto por defecto */
+
     opacity: 0;
     transform: translateY(50px);
     transition: all 0.8s ease;
@@ -234,7 +234,7 @@ html, body {
     background-color: rgba(255, 255, 255, 0.1);
 }
 
-/* Estilo para el panel de reglas (Funcionalidad JS) */
+
 .reglas-panel {
     background-color: #1a1a1a;
     padding: 20px;
@@ -242,7 +242,7 @@ html, body {
     max-width: 800px;
     border-radius: 10px;
     border-left: 5px solid #ffcc00;
-    display: none; /* Oculto por defecto */
+    display: none; 
 }
 .redes-submenu {
   display: none;
@@ -294,7 +294,7 @@ background: linear-gradient(0deg, #ff6b02,#301000,#100000);
   display: flex;
   align-items: center;
   gap: 16px;
-  background-color: rgba(0, 0, 0, 0.1); /* fondo suave para cada ítem */
+  background-color: rgba(0, 0, 0, 0.1);
   padding: 16px 24px;
   border-radius: 12px;
   box-shadow: 0 0 10px rgba(0,0,0,0.2);
