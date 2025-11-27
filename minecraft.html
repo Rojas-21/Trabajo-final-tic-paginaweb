@@ -1,18 +1,72 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MINECRAFT</title>
-  
-  <link rel="stylesheet" href="minecraft.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minecraft - El Mundo de Bloques</title>
+    <link rel="stylesheet" href="minecraft.css">
+    <script defer src="minecraft.js"></script>
 </head>
 <body>
-  <section class="juego-presentacion">
-    <h1>Minecraft</h1>
-    <div style="height: 130px;"></div>
-    <img src="img/minecarft.jpg" alt="Clash Royale">
-  </section>
-  <div style="height: 500px;"></div>
+    <header>
+        <nav class="navbar">
+            <a href="index.html">🏠 Inicio</a>
+            <a href="https://www.3djuegos.com/juegos/minecraft/guias-y-trucos/guia-crafteo-minecraft-bloques-herramientas-armas-armaduras-transporte">🧱 Bloques y Crafteo</a>
+            <a href="https://es.minecraft.wiki/w/Bioma">🌳 Biomas y Dimensiones</a>
+            <button id="show-crafting-modal">Tabla de Crafteo</button>
+        </nav>
+    </header>
+
+    <section class="juego-presentacion">
+        <h1>MINECRAFT</h1>
+        <img src="img/minecarft.jpg" alt="Imagen del mundo de Minecraft" id="main-image">
+        <p class="tagline">¡Explora, construye y sobrevive en un mundo infinito!</p>
+    </section>
+
+    <main class="main-content">
+        <article id="resumen">
+            <h2>🌍 ¿Qué es Minecraft?</h2>
+            <p>Minecraft es un videojuego de mundo abierto donde el jugador puede explorar un vasto mundo generado de forma procedural y compuesto enteramente por bloques. El juego no tiene objetivos fijos, permitiendo a los jugadores decidir cómo jugar: desde sobrevivir a la noche y explorar cuevas, hasta construir estructuras épicas y complejas.</p>
+        </article>
+
+        <section id="modos-de-juego">
+            <h2>⚔️ Modos de Juego</h2>
+            <ul class="game-modes-list">
+                <li>Supervivencia (Survival): Requiere recolectar recursos, craftear herramientas y armas, gestionar la salud y el hambre, y defenderse de mobs (criaturas hostiles).</li>
+                <li>Creativo (Creative): El jugador tiene acceso ilimitado a todos los bloques y objetos, es invulnerable y puede volar, ideal para la construcción pura.</li>
+                <li>Extremo (Hardcore): Similar a Supervivencia, pero con dificultad fijada en Difícil y muerte permanente.</li>
+            </ul>
+        </section>
+
+        <aside class="datos-rapidos">
+            <h3>🧩 Datos Rápidos</h3>
+            <p>Desarrollador: Mojang Studios</p>
+            <p>Lanzamiento: 2011 (Versión completa)</p>
+            <p>Plataformas: Prácticamente todas (PC, Consolas, Móviles)</p>
+        </aside>
+    </main>
+    
+    <div id="crafting-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h3>Tabla de Crafteo Rápido: Herramientas Básicas</h3>
+            <div class="craft-item">
+                <p>Pico de Madera:</p>
+                <p class="recipe">3 Bloques de Madera (Superior) + 2 Palos (Vertical)</p>
+            </div>
+            <div class="craft-item">
+                <p>Antorcha:</p>
+                <p class="recipe">1 Carbón + 1 Palo</p>
+            </div>
+            <div class="craft-item">
+                <p>Mesa de Crafteo:</p>
+                <p class="recipe">4 Bloques de Madera</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Guía de Bloquesde Minecraft. ¡Feliz Crafteo!</p>
+    </footer>
 </body>
 </html>

@@ -1,27 +1,126 @@
+/* --- Estilos Base --- */
 body {
-  margin: 0;
-  padding: 0;
-  font-family: 'Segoe UI', sans-serif;
-
-background: linear-gradient(0deg, #e0dfdd,#713901,#ff9d0b);
-  color: #fff;
-  text-align: center;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif; /* Usamos una fuente más "limpia" */
+    
+    /* Degradado para CS2: oscuro, gris metálico y toques de naranja/amarillo */
+    background: linear-gradient(180deg, #ffffff4c 0%, #551f02 50%, #e56911 100%);
+    color: #e0dfdd; /* Color de texto gris claro */
+    min-height: 100vh; /* Asegura que el fondo cubra toda la altura */
 }
 
 .juego-presentacion {
-  padding: 80px 20px;
+    padding: 80px 20px 40px;
+    text-align: center;
 }
 
 .juego-presentacion h1 {
-  font-size: 80px;
-  color: #ffffff;
-  text-shadow: 0 0 20px #fff, 0 0 40px #ccc;
-  margin-bottom: 40px;
+    font-size: 80px;
+    color: #000000; /* Naranja/Dorado CS */
+    text-shadow: 0 0 10px #303030, 0 0 20px rgba(22, 22, 22, 0.5);
+    margin-bottom: 20px;
 }
 
 .juego-presentacion img {
-  width: 100%;
-  max-width: 800px;
-  border-radius: 20px;
-  box-shadow: 0 0 30px rgba(255,255,255,0.3);
+    width: 100%;
+    max-width: 800px;
+    border-radius: 5px; /* Bordes más cuadrados, menos suaves */
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+    border: 3px solid #713901; /* Borde sutil */
+}
+
+.tagline {
+    font-size: 1.5em;
+    font-style: italic;
+    color: #e0dfdd;
+    margin-top: 20px;
+}
+
+/* --- Estilos para la Navegación y Estructura --- */
+
+.navbar {
+    background-color: #0d0d0d;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    border-bottom: 2px solid #ff9d0b; /* Línea de contraste */
+}
+
+.navbar a, #js-feature-toggle {
+    color: #e0dfdd;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 15px;
+    border-radius: 3px;
+    transition: background-color 0.3s, color 0.3s;
+    background: none;
+    border: 1px solid #444; /* Borde para el botón */
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.navbar a:hover, #js-feature-toggle:hover {
+    background-color: #ff9d0b;
+    color: #0a0a0a;
+}
+
+/* --- Contenido Principal (Layout Flexbox) --- */
+
+.main-content {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    display: flex; 
+    gap: 30px;
+    flex-wrap: wrap; 
+    align-items: stretch;
+    text-align: left; /* Alineamos el texto a la izquierda en las cajas */
+}
+
+article, section {
+    flex-basis: calc(60% - 15px); /* Un poco más de la mitad para el contenido principal */
+    flex-grow: 1; 
+    background-color: rgba(255, 255, 255, 0.05); /* Fondo oscuro transparente */
+    padding: 30px;
+    border-radius: 5px;
+    border-left: 5px solid #ff9d0b; /* Detalle de color CS */
+}
+
+/* Estilo para las listas de novedades */
+.novedades-list {
+    list-style-type: '⚡ '; /* Bullet points temáticos */
+    padding-left: 20px;
+}
+
+/* --- Aside y Funcionalidad JS --- */
+.js-section {
+    flex-basis: 300px; /* Ancho más angosto para el contador */
+    flex-grow: 1; 
+    background-color: #333; /* Fondo más oscuro */
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    border: 1px solid #ff9d0b;
+    text-align: center;
+}
+
+.countdown-timer {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #ff9d0b;
+    padding: 10px 0;
+    margin-bottom: 15px;
+    background-color: #1a1a1a;
+    border-radius: 3px;
+    letter-spacing: 2px;
+}
+
+/* Footer */
+footer {
+    background-color: #0d0d0d;
+    padding: 20px;
+    margin-top: 50px;
+    border-top: 1px solid #333;
 }

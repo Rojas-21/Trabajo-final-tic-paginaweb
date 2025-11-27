@@ -1,26 +1,135 @@
+
 body {
-  margin: 0;
-  padding: 0;
-  font-family: 'Segoe UI', sans-serif;
-  background: linear-gradient(90deg, #ff6000, #301000, #100000);
-  color: #fff;
-  text-align: center;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+    min-height: 100vh;
+    background: linear-gradient(90deg, #ff6000, #301000, #100000);
+    color: #fff;
+ 
 }
 
 .juego-presentacion {
-  padding: 80px 20px;
+    padding: 80px 20px 40px; /* Reducimos el padding inferior */
+    text-align: center; /* Centramos solo la presentación */
 }
 
 .juego-presentacion h1 {
-  font-size: 80px;
-  color: #ffffff;
-  text-shadow: 0 0 20px #fff, 0 0 40px #ccc;
-  margin-bottom: 40px;
+    font-size: 80px;
+    color: #ffffff;
+    text-shadow: 0 0 20px #fff, 0 0 40px #ccc;
+    margin-bottom: 40px;
 }
 
 .juego-presentacion img {
-  width: 100%;
-  max-width: 800px;
-  border-radius: 20px;
-  box-shadow: 0 0 30px rgba(255,255,255,0.3);
+    width: 100%;
+    max-width: 800px;
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(255,255,255,0.3);
+}
+
+
+
+/* NavBar */
+.navbar {
+    background-color: #ffffff52;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.navbar a, #menu-toggle {
+    color: #ffd700; /* Dorado para enlaces */
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.navbar a:hover, #menu-toggle:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Contenido Principal */
+.main-content {
+    max-width: 1200px; /* Aumenta el ancho máximo del contenedor */
+    margin: 40px auto;
+    padding: 20px;
+    display: flex; 
+    gap: 30px;
+    /* Para que los elementos no se salgan de la caja */
+    flex-wrap: wrap; 
+    /* Alineación vertical */
+    align-items: stretch;
+}
+
+article, section {
+    /* Aquí está el problema: antes tenías flex-grow: 3 */
+    /* Lo cambiamos para que ocupe casi la mitad (50%) menos el margen */
+    flex-basis: calc(50% - 15px); /* Ocupa la mitad del espacio menos la mitad del gap */
+    flex-grow: 1; /* Permite que crezca un poco */
+    
+    background-color: rgba(0, 0, 0, 0.7); /* Hacemos el fondo más opaco */
+    padding: 30px;
+    border-radius: 15px;
+}
+
+.datos-rapidos {
+    /* Este es el aside, queremos que ocupe menos (un tercio) */
+    flex-basis: 300px; /* Establece un ancho fijo/mínimo */
+    flex-grow: 1; /* Permite que crezca si hay espacio */
+    
+    background-color: #ff6000;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+    /* **Ajuste Importante:** Asegura que el texto no esté centrado por defecto */
+    text-align: left; 
+}
+
+/* Footer */
+footer {
+    background-color: #100000;
+    padding: 20px;
+    margin-top: 50px;
+    border-top: 1px solid #ff740a;
+}
+
+/* --- Estilos para la Funcionalidad Dinámica (Sidebar) --- */
+.sidebar {
+    height: 100%;
+    width: 0; /* **Oculto por defecto** (controlado por JS) */
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #000;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    border-right: 3px solid #3f1b04;
+    text-align: left;
+}
+
+.sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #fff;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    color: #00ffea;
+}
+/* Clase que se añade/quita con JS */
+.sidebar.active {
+    width: 250px;
 }

@@ -1,15 +1,55 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title> Rocket Legue</title>
-  <link rel="stylesheet" href="rocketleague.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rocket League - Fútbol con Propulsión</title>
+    <link rel="stylesheet" href="rocketleague.css">
+    <script defer src="rocketleague.js"></script>
 </head>
 <body>
-  <section class="juego-presentacion">
-    <h1>Rocket League</h1>
-    <img src="img/rocket.jpg" alt="Clash Royale">
-  </section>
+    <header>
+        <nav class="navbar">
+            <a href="index.html">🏠 Inicio</a>
+            <a href="https://rocket-league.fandom.com/es/wiki/Tipos_de_Veh%C3%ADculo">🚗 Coches y Hitboxes</a>
+            <a href="estrategias.html">🚀 Estrategia Avanzada</a>
+            <button id="rank-info-toggle">Ver Rangos</button>
+        </nav>
+    </header>
+
+    <section class="juego-presentacion">
+        <h1>ROCKET LEAGUE</h1>
+        <img src="img/rocket.jpg" alt="Coches jugando fútbol en Rocket League" id="main-image">
+        <p class="tagline">Fútbol con propulsión. ¡Domina el aire!</p>
+    </section>
+
+    <main class="main-content">
+        <article id="resumen">
+            <h2>⚽ Rocket League: ¿Qué es?</h2>
+            <p>Rocket League es un videojuego que fusiona el fútbol arcade con la conducción de vehículos propulsados por cohetes. Los jugadores controlan coches y deben golpear una pelota gigante hacia la portería rival. El juego es conocido por su alta curva de habilidad, que incluye el uso de impulso (boost), saltos dobles y la capacidad de volar y golpear el balón en el aire (Añéreos).</p>
+        </article>
+
+        <section id="ligas">
+            <h2>🏆 Ligas Competitivas</h2>
+            <ul class="liga-list">
+                <li>Rumble: Modo caótico con potenciadores aleatorios.</li>
+                <li>Hoops: Similar al baloncesto, utilizando aros.</li>
+                <li>Dropshot: Los goles se anotan rompiendo el suelo del rival.</li>
+                <li>Snow Day: Hockey sobre hielo con un disco.</li>
+            </ul>
+        </section>
+
+        <aside class="js-section">
+            <h3>📈 Tu Ranking (Ejemplo)</h3>
+            <div id="rank-display" class="rank-box">
+                <p>Haz clic en el botón "Ver Rangos" para ver la lista de las divisiones competitivas.</p>
+            </div>
+            <p class="nota">La habilidad es la clave para subir de Plata a Diamante.</p>
+        </aside>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Guía de Rocket League. ¡Qué gran pase!</p>
+    </footer>
 </body>
 </html>

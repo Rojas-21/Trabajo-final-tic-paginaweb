@@ -1,18 +1,57 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Clash Royale</title>
-  
-  <link rel="stylesheet" href="clashroyale.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clash Royale - Guía Principal</title>
+    <link rel="stylesheet" href="clashroyale.css">
+    <script defer src="clashroyale.js"></script>
 </head>
 <body>
-  <section class="juego-presentacion">
-    <h1>Clash Royale</h1>
-    <div style="height: 130px;"></div>
-    <img src="img/clashroyale.jpg" alt="Clash Royale">
-  </section>
-  <div style="height: 500px;"></div>
+    <header>
+        <nav class="navbar">
+            <a href="index.html">🏠 Inicio</a>
+            <a href="https://www.deckshop.pro/es/card/list">⚔️ Cartas</a>
+            <a href="estrategias.html">🎯 Estrategias</a>
+            <button id="menu-toggle">☰ Menú Lateral</button>
+        </nav>
+        <div id="sidebar" class="sidebar">
+            <a href="#resumen">Resumen</a>
+            <a href="#modos-de-juego">Modos</a>
+            <a href="#historia">Historia</a>
+        </div>
+    </header>
+
+    <section class="juego-presentacion">
+        <h1>Clash Royale</h1>
+        <img src="img/clashroyale.jpg" alt="Clash Royale Logo" id="main-image">
+    </section>
+
+    <main class="main-content">
+        <article id="resumen">
+            <h2>📜 ¿Qué es Clash Royale?</h2>
+            <p>Clash Royale es un videojuego de estrategia freemium para móviles, desarrollado y publicado por Supercell. Combina elementos de juegos de cartas coleccionables, defensa de torres y multijugador en línea (MOBA). El objetivo principal es destruir las torres del Rey y de las Princesas del rival usando un mazo de ocho cartas.</p>
+        </article>
+        
+        <section id="modos-de-juego">
+            <h2>🕹️ Modos de Juego</h2>
+            <ul>
+                <li>1v1 Ladder: La batalla principal para subir de copas y alcanzar las Ligas.</li>
+                <li> 2v2: Batallas cooperativas con un compañero.</li>
+                <li> Desafíos: Eventos especiales con reglas únicas y grandes recompensas.</li>
+            </ul>
+        </section>
+        
+        <aside class="datos-rapidos">
+            <h3>📊 Datos Rápidos</h3>
+            <p>Desarrollador: Supercell</p>
+            <p>Lanzamiento:Marzo de 2016</p>
+            <p>Plataforma: iOS, Android</p>
+        </aside>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Guía de Clash Royale.</p>
+    </footer>
 </body>
 </html>

@@ -1,18 +1,55 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>COUNTER STIKE</title>
-  
-  <link rel="stylesheet" href="counterstrike.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter-Strike 2 - Inicio</title>
+    <link rel="stylesheet" href="counterstrike.css">
+    <script defer src="counterstrike.js"></script>
 </head>
 <body>
-  <section class="juego-presentacion">
-    <h1>COUNTER STRIKE 2</h1>
-    <div style="height: 130px;"></div>
-    <img src="img/cs2.webp" alt="Clash Royale">
-  </section>
-  <div style="height: 500px;"></div>
+    <header>
+        <nav class="navbar">
+            <a href="index.html">🏠 Inicio</a>
+            <a href="armas.html">🔫 Armas y Equipamiento</a>
+            <a href="mapas.html">🗺️ Mapas</a>
+            <button id="js-feature-toggle">Ver Próximo Torneo</button>
+        </nav>
+    </header>
+
+    <section class="juego-presentacion">
+        <h1>COUNTER-STRIKE 2</h1>
+        <img src="img/cs2.webp" alt="Logotipo de Counter-Strike 2" id="main-image">
+        <p class="tagline">La próxima era del FPS competitivo ha llegado.</p>
+    </section>
+
+    <main class="main-content">
+        <article id="resumen">
+            <h2>🚨 ¿Qué es CS2?</h2>
+            <p>Counter-Strike 2 es la secuela del legendario CS:GO. Desarrollado por Valve, mantiene la esencia del shooter táctico 5v5 basado en objetivos, pero lo reconstruye en el motor Source 2, ofreciendo gráficos mejorados, un nuevo sistema de humo volumétrico y una jugabilidad más precisa.</p>
+        </article>
+
+        <section id="novedades">
+            <h2>💥 Novedades Clave</h2>
+            <ul class="novedades-list">
+                <li>Humo Volumétrico Dinámico: Las granadas de humo ahora interactúan con la luz, el ambiente y las balas, creando nuevas oportunidades tácticas.</li>
+                <li>Sub-Tick Update (Tick Rate): Los movimientos y disparos se registran con mayor precisión gracias a la nueva arquitectura, haciendo que el servidor sepa con exactitud cuándo disparaste, te moviste o lanzaste una granada.</li>
+                <li>Mapas Renovados: Mapas clásicos como Inferno y Nuke han sido actualizados con mejor iluminación y texturas.</li>
+            </ul>
+        </section>
+
+        <aside class="js-section">
+            <h3>🌐 Próximo Gran Torneo (Major)</h3>
+            <p>Faltan:</p>
+            <div id="countdown" class="countdown-timer">
+                <span id="dias">0D</span> : <span id="horas">0H</span> : <span id="minutos">0M</span> : <span id="segundos">0S</span>
+            </div>
+            <p>¡Prepárate para la acción!</p>
+        </aside>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Guía Táctica de CS2. Headshot only.</p>
+    </footer>
 </body>
 </html>

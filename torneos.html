@@ -1,84 +1,94 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>JR XPlay - Comunidad Gamer</title>
-  <link rel="stylesheet" href="torneos.css">
+    <meta charset="UTF-8">
+    <title>JR XPlay - Comunidad Gamer | Torneos</title>
+    <link rel="stylesheet" href="torneos.css">
+    <script defer src="torneos.js"></script> 
 </head>
 <body>
-  <header class="cabecera">
-    <div class="logo">
+    <header class="cabecera">
+        <div class="logo">
+            <a href="index.html">
+                <img src="img/logojr.png" alt="Logo JR XPlay">
+            </a>
+        </div>
+        <div class="texto-cabecera">
+            <h1>JR XPlay</h1>
+        </div>
+    </header>
 
-     <a href="index.html">
-        <img src="img/logojr.png" alt="Logo JR XPlay">
-      </a>
-        
-     
-    </div>
-    <div class="texto-cabecera">
-      <h1>JR XPlay</h1>
-    
-    </div>
-  </header>
-
-  <nav class="barra">
-    <ul>
-      <li class="dropdown">
-           <li><a href="registro.html">Inscripción</a></li>
-      <li class="dropdown">
-        <a href="#" class="contacto-toggle">Contacto ▾</a>
-        <ul class="redes-submenu">
-          <li><a href="#" data-red="discord">Discord</a></li>
-          <li><a href="#" data-red="gmail">Gmail</a></li>
-          <li><a href="#" data-red="instagram">Instagram</a></li>
+    <nav class="barra">
+        <ul>
+            <li><a href="registro.html">Inscripción</a></li>
+            <li class="dropdown">
+                <a href="#" class="contacto-toggle">Contacto ▾</a>
+                <ul class="redes-submenu">
+                    <li><a href="#" data-red="discord">Discord</a></li>
+                    <li><a href="#" data-red="gmail">Gmail</a></li>
+                    <li><a href="#" data-red="instagram">Instagram</a></li>
+                </ul>
+            </li>
         </ul>
-      </li>
-    </ul>
-  </nav>
-<div style="height: 6px;"></div>
-  <main class="principal">
- <div class="bienvenida">
-      <h1>TORNEOS</h1>
+    </nav>
+
+    <main class="principal">
+        <div class="bienvenida">
+            <h1>TORNEOS</h1>
+        </div>
+    </main>
     
-    </div>
-  </main>
-<div style="height: 130px;"></div>
-
-  <section class="juegos-destacados">
-
-   
-
-    <div class="juego">
-      <img src="img/rocket.jpg" alt="Rocket League">
-      <div class="info">
-    
-        <h3>Rocket League</h3>
-       <br>
-           <div class="juego">
-            <br>
-            <br>
-      <img src="img/minecarft.jpg" alt="Minecraft">
-
-      <div class="info">
-       
-        <h2>Minecraft</h2>
-       
-      </div>
-      </div>
-    </div>
-    <br>
-    <br>
-        <div class="juego">
-      <img src="img/Clashroyale.jpg" alt="Clash Royale">
-      <div class="info">
-        <h1>Clash Royale</h1>
+    <section class="juegos-destacados">
+        <article class="torneo-card" data-game="rocketleague">
+            <img src="img/rocket.jpg" alt="Torneo de Rocket League" class="torneo-img">
+            <div class="info-torneo">
+                <h3>Rocket League | Copa Turbo</h3>
+                <div class="detalles-clave">
+                    <p>🏅 Formato: 3v3 Eliminación Simple</p>
+                    <p>📅 Fecha de Inicio: 15 de Diciembre</p>
+                    <p>💰 Premio: $100 USD + Artículos del Juego</p>
+                    <p>🎟️ Inscritos: <span id="rl-inscritos">12/32</span> equipos</p>
+                </div>
+                <a href="registro.html?juego=rocketleague" class="btn-registro">¡Inscríbete Ahora!</a>
+                <button class="btn-reglas" data-game-id="rl">Ver Reglas</button>
+            </div>
+        </article>
         
-      </div>
+        <article class="torneo-card" data-game="minecraft">
+            <img src="img/minecarft.jpg" alt="Torneo de Minecraft" class="torneo-img">
+            <div class="info-torneo">
+                <h2>Minecraft | Desafío BedWars</h2>
+                <div class="detalles-clave">
+                    <p>🏅 Formato: 4v4 BedWars (Servidor Privado)</p>
+                    <p>📅 Fecha de Inicio: 22 de Diciembre</p>
+                    <p>💰 Premio: Rango VIP + Discord Nitro</p>
+                    <p>🎟️ Inscritos:<span id="mc-inscritos">5/16</span> equipos</p>
+                </div>
+                <a href="registro.html?juego=minecraft" class="btn-registro">¡Inscríbete Ahora!</a>
+                <button class="btn-reglas" data-game-id="mc">Ver Reglas</button>
+            </div>
+        </article>
+        
+        <article class="torneo-card" data-game="clashroyale">
+            <img src="img/Clashroyale.jpg" alt="Torneo de Clash Royale" class="torneo-img">
+            <div class="info-torneo">
+                <h1>Clash Royale | Batalla Real</h1>
+                <div class="detalles-clave">
+                    <p>🏅 Formato: 1v1 Doble Eliminación</p>
+                    <p>📅 Fecha de Inicio: 29 de Diciembre</p>
+                    <p>💰 Premio: 2500 Gemas + Pase de Temporada</p>
+                    <p>🎟️ Inscritos: <span id="cr-inscritos">45/64</span> participantes</p>
+                </div>
+                <a href="registro.html?juego=clashroyale" class="btn-registro">¡Inscríbete Ahora!</a>
+                <button class="btn-reglas" data-game-id="cr">Ver Reglas</button>
+            </div>
+        </article>
+    </section>
 
-<div style="height: 500px;"></div>
-
-  </section>
+    <div id="reglas-panel" class="reglas-panel"></div>
+    
     <div id="contacto-panel" class="social-panel"></div>
-  <script src="script.js"></script>
+
+    <script src="torneos.js"></script>
 </body>
 </html>

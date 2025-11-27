@@ -57,7 +57,7 @@ document.addEventListener("DOMContentLoaded", () => {
         <div class="social-item discord">
         <img class="icono" src="img/disc.png" alt="Discord">
         <div>
-          <strong>Discord:</strong> <a href="https://discord.gg/HeduBGVU target="_blank">jr_xplay#1234</a>
+          <strong>Discord:</strong> <a href="https://discord.gg/HeduBGVU"_blank">jr_xplay#1234</a>
           <div><small>Click para abrir tu Discord</small></div>
         </div>
       </div>

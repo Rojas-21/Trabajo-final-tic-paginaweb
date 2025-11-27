@@ -1,27 +1,132 @@
+/* --- Estilos Base para Rocket League --- */
 body {
-  margin: 0;
-  padding: 0;
-  font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif; /* Fuente moderna */
+    
+    /* Degradado de Azul Oscuro a Azul Eléctrico y Blanco */
+    background: linear-gradient(180deg, #052247 0%, #0984ff 50%, #efefef 100%);
+    color: #fff;
+    min-height: 100vh;
+}
 
-background: linear-gradient(0deg, #efefef,#052247,#0984ff);
-  color: #fff;
-  text-align: center;
+h1, h2, h3 {
+    font-weight: 700;
 }
 
 .juego-presentacion {
-  padding: 80px 20px;
+    padding: 80px 20px 40px;
+    text-align: center;
 }
 
 .juego-presentacion h1 {
-  font-size: 80px;
-  color: #ffffff;
-  text-shadow: 0 0 20px #fff, 0 0 40px #ccc;
-  margin-bottom: 40px;
+    font-size: 80px;
+    color: #ffd700; /* Dorado/Amarillo de energía */
+    text-shadow: 0 0 10px #ffd700, 0 0 30px rgba(255,215,0,0.5);
+    margin-bottom: 20px;
 }
 
 .juego-presentacion img {
-  width: 100%;
-  max-width: 800px;
-  border-radius: 20px;
-  box-shadow: 0 0 30px rgba(255,255,255,0.3);
+    width: 100%;
+    max-width: 800px;
+    border-radius: 10px;
+    /* Efecto neón azul */
+    box-shadow: 0 0 30px rgba(9, 132, 255, 0.7); 
+    border: 3px solid #0984ff;
+}
+
+.tagline {
+    font-size: 1.5em;
+    font-weight: 500;
+    color: #efefef;
+    margin-top: 30px;
+}
+
+/* --- Estilos para la Navegación y Estructura --- */
+
+.navbar {
+    background-color: #052247; /* Azul Oscuro (cabina) */
+    padding: 15px 20px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    border-bottom: 2px solid #0984ff;
+}
+
+.navbar a, #rank-info-toggle {
+    color: #efefef;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 15px;
+    border-radius: 20px; /* Bordes suaves/circulares */
+    background: #0984ff;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.2s ease-in-out;
+}
+
+.navbar a:hover, #rank-info-toggle:hover {
+    background-color: #ffd700;
+    color: #052247;
+    transform: scale(1.05); /* Efecto de "propulsión" */
+}
+
+/* --- Contenido Principal (Flexbox) --- */
+
+.main-content {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    display: flex; 
+    gap: 30px;
+    flex-wrap: wrap; 
+    align-items: stretch;
+    text-align: left;
+}
+
+article, section {
+    flex-basis: calc(60% - 15px);
+    flex-grow: 1; 
+    background-color: rgba(0, 0, 0, 0.6); /* Oscuro transparente */
+    padding: 30px;
+    border-radius: 10px;
+    border-left: 5px solid #0984ff;
+}
+
+.liga-list {
+    list-style-type: '⚡ '; 
+    padding-left: 20px;
+}
+
+/* --- Aside y Funcionalidad JS --- */
+.js-section {
+    flex-basis: 300px;
+    flex-grow: 1; 
+    background-color: #052247;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(9, 132, 255, 0.5);
+    border: 1px solid #0984ff;
+    text-align: center;
+}
+
+.rank-box {
+    min-height: 100px;
+    background-color: #1a1a1a;
+    padding: 15px;
+    margin-top: 15px;
+    border-radius: 5px;
+    color: #ffd700;
+    font-weight: bold;
+    transition: all 0.5s;
+    text-align: center;
+}
+
+/* Footer */
+footer {
+    background-color: #052247;
+    padding: 20px;
+    margin-top: 50px;
+    border-top: 3px solid #0984ff;
 }
